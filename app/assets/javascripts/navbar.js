@@ -1,15 +1,13 @@
-$(document).ready(function {
-  $('.nav').on('click', 'a', function(event) {
-
-  })
+$(document).ready(function() {
+    activeNav();
 });
 
-var activeNav = function(clicked) {
-  currentURL = window.URL
-
-  if (clicked === currentURL) {
-    clicked.addClass('active');
-  }
-
-}
-
+var activeNav = function() {
+  var currentURL = document.URL;
+  $('.nav li').removeClass('active');
+  $('li a').each(function(){
+    if (this.href === currentURL) {
+      $(this).parent().addClass('active');
+    }
+  });
+};

@@ -3,6 +3,10 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc2'
 
+gem 'haml-rails'
+gem 'bootstrap-sass', '~> 2.3.2.0'
+
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -21,21 +25,15 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-gem 'haml-rails'
-
-gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
-                              :git => 'git://github.com/anjlab/bootstrap-rails.git',
-                              :branch => '3.0.0'
-
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
 group :test, :dev do
   gem 'jasmine'
-  gem 'evergreen'
+  gem 'evergreen', require: 'evergreen/rails'
 end
 
 group :doc do

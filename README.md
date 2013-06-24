@@ -5,15 +5,20 @@ Step 1:
 Give navbar items an active class if the url matches their link.
 
     Create a page with a bootstrap navbar
-    If the link in the navbar is the same as the url of the page, add the class ‘active’ to the nearest li.
-    Expand this by supporting nested lists, if a sublist item is active, also add the active class to the parent list item.
-    You shouldn’t need to support more than one level deep but consider what you might do to enable that.
+    If the link in the navbar is the same as the url of the page, add the class
+    ‘active’ to the nearest li.
+    Expand this by supporting nested lists, if a sublist item is active, also
+    add the active class to the parent list item.
+    You shouldn’t need to support more than one level deep but consider what you
+    might do to enable that.
     Reserve half the exercise time to write tests afterwards.
 
 Reflection activity:
 
-    This is an incredibly common activity that you’ll do on almost every single site. How can you wrap up the functionality to be useful later on?
-    If you didn’t put all the code in a function to begin with, did you have to once you started testing?
+    This is an incredibly common activity that you’ll do on almost every single
+    site. How can you wrap up the functionality to be useful later on?
+    If you didn’t put all the code in a function to begin with, did you have to
+    once you started testing?
 
 Step 2:
 
